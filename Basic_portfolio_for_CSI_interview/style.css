@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+}
+
+.nav{
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    align-items:center ;
+    background: linear-gradient(to bottom, #020202, #000000ea);
+    width: 100%;
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.nav-bar img{
+    height: 5rem;
+    margin-left: 1.5rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+.nav-bar{
+    transition: 1s;
+    font-size: 1.8rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-block{
+    /* border: 2px solid whitesmoke; */
+    width:8rem;
+}
+.nav-block1{
+    /* border: 2px solid whitesmoke; */
+    width:6rem;
+}
+.nav-block1::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#93B1A6;
+    transition-duration: 1s;
+    display: block;
+}
+.nav-block1:hover::after{
+    width: 100%;
+}
+.nav-block::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#93B1A6;
+    transition-duration: 1s;
+    display: block;
+}
+.nav-block:hover::after{
+    width: 100%;
+}
+
+
+.home{
+    top: 0rem;
+    height: 43.8rem;
+    width: 100%;
+    background-image:linear-gradient( #000a07a4, rgb(0, 0, 0)),url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.name{
+    color: white;
+    font-size: 4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 5rem;
+}
+.name:hover{
+    /* animation-name: myName;
+    /* position: absolute */
+    /* animation-timing-function: alternate;
+    animation-duration: 2s;
+    animation-fill-mode: both; */ 
+    text-shadow: 1px 1px 4px rgb(186, 186, 186);
+    transition: 1s;
+    width: 50%;
+    /* transform:skew(35deg); */
+    transform: skew(-35deg);
+    cursor: pointer;
+}
+/* @keyframes myName{
+    0%{
+        color: #000000;
+    }
+    25%{
+        transform: translate(2rem );
+        color: #0c2020;
+    }
+    50%{
+        transform: translate(-1rem);
+        color: #183D3D;
+    }
+    75%{
+        color: #93B1A6;
+    }
+    100%{
+        transform: translate(2rem);
+        color: aliceblue;
+    }
+} */
+
+.home p{
+    color: #b3b3b3;
+    margin: 0.9rem 5rem ;
+    text-decoration: none;
+}
+.para1{
+    font-size: 1.5rem;
+}
+.profile{
+    height: 15rem;
+    border-radius: 105%;
+    margin-left: 5rem;
+    margin-top: 4rem;
+}
+.social-media{
+    margin-left: 5rem;
+}
+.social-media img{
+    height: 2.5rem;
+    border-radius: 10%;
+    margin:0.5rem
+}
+.social-media img:hover{
+    box-shadow: 0 0 8px 1.2px rgb(197, 197, 197);
+}
+.info a{
+    text-decoration: none;
+}
+
+@media(max-width:945px){
+    .nav-bar{
+        font-size: 1.1rem;
+        width: 1005;
+    }
+    .nav-bar img{
+        height: 3rem;
+        margin-left: 1.2rem;
+        width: 4rem;
+    }
+    .nav-block{
+        width:5.4rem;
+    }
+    .nav-block1{
+        width:4rem;
+    }
+    .nav{
+        height: 4.5rem;
+    }
+    .name{
+        font-size: 3.4rem;
+        
+    }
+    .para1{
+        font-size: 1.3rem;
+    }
+    .profile{
+        height: 13rem;
+        border-radius: 105%;
+        margin-left: 5rem;
+        margin-top: 4rem;
+    }
+
+    @media(max-width:638px)
+    {
+        .title{
+            margin-left: 1rem;
+        }
+        .nav-bar{
+            font-size: 0.9rem;
+            margin: 0.4rem;
+        }
+        .nav-bar img{
+            height: 3rem;
+            margin-left: 1.2rem;
+            width: 4rem;
+        }
+        .nav-block{
+            width:4.3rem;
+            /* border: 2px solid rebeccapurple; */
+        }
+        .nav-block1{
+            width:3rem;
+        }
+        .nav{
+            height: 4.5rem;
+        }
+        .name{
+            font-size: 2.2rem;
+            margin-left: 3rem;
+        }
+        .home p{
+            margin-left: 3rem;
+        }
+        .para1{
+            font-size: 1.2rem;
+            margin-left: 3rem;
+        }
+        .profile{
+            height: 9rem;
+            border-radius: 105%;
+            margin-left: 3rem;
+            margin-top: 2.4rem;
+        }
+        .social-media{
+            margin-left: 3rem;
+        }
+        .social-media img{
+            height: 2.2rem;
+        }
+            
+    }
+}

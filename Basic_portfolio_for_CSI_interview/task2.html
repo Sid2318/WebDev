@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Task 2</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="" class="nav-bar">
+            <img src="logo.jpeg" alt="CSI logo">
+        </a>
+        <div class="title sidebar">
+            <a class="cross_task1"><i class="fa-solid fa-xmark"></i></a>
+            <a href="index.html" target="_blank" class="nav-bar"><span class="nav-block">About Me</span></a>
+            <a href="task1.html" target="_blank" class="nav-bar"><span class="nav-block1">Task 1</span></a>
+            <a href="task2.html" target="_blank" class="nav-bar"><span class="nav-block1">Task 2</span></a>
+            <a href="task3.html" target="_blank" class="nav-bar"><span class="nav-block1">Task 3</span></a>
+            <a href="project.html" target="_blank" class="nav-bar"><span class="nav-block">Projects</span></a>
+        </div>
+        <div class="title">
+            <a href="index.html" target="_blank" class="nav-bar hideOnMobile"><span class="nav-block">About Me</span></a>
+            <a href="task1.html" target="_blank" class="nav-bar hideOnMobile"><span class="nav-block1">Task 1</span></a>
+            <a href="task2.html" target="_blank" class="nav-bar hideOnMobile"><span class="nav-block1">Task 2</span></a>
+            <a href="task3.html" target="_blank" class="nav-bar hideOnMobile"><span class="nav-block1">Task 3</span></a>
+            <a href="project.html" target="_blank" class="nav-bar hideOnMobile"><span class="nav-block">Projects</span></a>
+            <a onclick= showSidebar()><div class="icon1 hideOnScreen"><i class="fa-solid fa-bars"></i></div></a>
+        </div>
+    </div>
+        <div class="container2">
+            <h1>Task 2</h1>
+            <ul>
+                <li>Design a responsive contact form with client-side 
+                    validations using JS</li>
+                <li>Use HTML to create the structure of the form with fields like 
+                    name, email, phone number, and message</li>
+                <li>Use CSS to make the form more visually appealing.</li>
+                <li>Use JS to handle the form validation using form inputs. (For 
+                    eg. check if the email and phone number are in a valid 
+                    format and also make some fields required)</li>
+            </ul>
+            <button class="start" >Let's Go</button>
+        </div>
+    </div>
+    <div class="center">
+        <div class="task2">
+            <fieldset>
+                <legend>Information</legend>
+                <form action="" id="contactForm">
+                    <label for="">Name</label>
+                    <input type="text" 
+                    id="name" placeholder="Enter Your Name" required >
+                    <label for="">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Gmail" required >
+                    <label for="">Phone Number</label>
+                    <input type="tel" id="number" placeholder="Enter your Phone Number" required >
+                    <label for="">Message</label>
+                    <textarea placeholder="Enter Your Message" id="message" required ></textarea>
+                    <button type="submit" class="submit_btn">Submit</button>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
