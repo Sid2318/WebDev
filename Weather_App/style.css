@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    background-color: rgba(12, 12, 12, 0.966);
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    padding:34px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background: linear-gradient(-23deg, rgba(156, 120, 255, 0.349), rgb(108, 255, 228));
+    margin: auto;
+    margin-top: 100px;
+    /* margin-top: 15%; */
+    border-radius: 20px;
+    width: 380px;
+    /* width: 40%; */
+}
+/* .innerblock1 ,.innerblock2, .block1, .block2, .windblock, .humidityblock{
+    border: 2px solid rebeccapurple;
+    margin: 2px;
+} */
+
+/* search */
+.searchbar{
+    display: flex;
+    margin-top: 10px;
+    /* margin: 2%; */
+}
+input
+{
+    padding: 2%;
+    border: none;
+    /* border-radius: 400px; */
+}
+input:focus {
+    border-color: bisque;
+    outline: none;
+}
+.searchname{
+    padding: 13px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 30px;
+    width: 72%;
+    margin-left: 12px;
+}
+.searchbar img{
+    height:13px;
+    margin: auto;
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+    cursor: pointer; /* Makes it look clickable */
+    transition: all 0.5s ease; 
+}
+.searchbar img:active {
+    transform: scale(0.9); /* Adds a click effect by scaling */
+    background: rgb(199, 198, 198); /* Slightly darker background on click */
+}
+
+
+
+/* middle block 1 */
+.block1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.block1 img{
+    height: 150px;
+}
+.tmp{
+    color: aliceblue;
+    font-size: 80px;
+    font-weight: 600;
+}
+.place{
+    margin: 4px 0;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+/* end block */
+.block2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.innerblock1 , .innerblock2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block2 img{
+    height: 31px;
+}
+.humiditypercentage , .windspeed{
+    font-size: 25px;
+}
